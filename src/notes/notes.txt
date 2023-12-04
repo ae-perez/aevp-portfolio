@@ -1,0 +1,20 @@
+resources:
+https://cruip.com/creating-a-sliding-text-animation-with-tailwind-css/
+
+// color scheme I'm using for this project
+https://imagecolorpicker.com/en
+
+// for when I'm ready to customize color on my website
+https://tailwindcss.com/docs/customizing-colors
+
+//projects I'm referencing off of
+https://olaolu.dev/
+
+https://mattfarley.ca/
+
+https://www.seanhalpin.xyz/    **************************************************************** main one ********************************
+
+https://www.wix.com/website-template/view/html/3141?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F9&tpClick=view_button&esi=2add42a5-a526-422c-aed1-04a18c219ff0
+
+https://www.wix.com/website-template/view/html/2846?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F4&tpClick=view_button&esi=bdae8c56-de96-491b-8542-79987e19d99f
+
