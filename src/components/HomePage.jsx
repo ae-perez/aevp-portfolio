@@ -1,5 +1,6 @@
 // src/components/HomePage.jsx
 import Navigation from "./Navigation";
+import Card from "./Card";
 import React, { useState, useEffect } from "react";
 
 const HomePage = () => {
@@ -15,11 +16,11 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="no-scrollbar">
       {showContent ? (
         <div className="sticky top-0">
           <Navigation />
-          <div className="text-center my-10">
+          <div className="text-center mt-56">
             <h1 className="text-8xl font-extrabold tracking-widest w-full">
               Hi. I'm Alé.
             </h1>
@@ -34,12 +35,30 @@ const HomePage = () => {
                   <li aria-hidden="true">Full Stack</li>
                 </ul>
               </span>{" "}
-              Developer
+              Developer.
             </div>
             <p className="text-3xl my-3">
               I'm passionate about crafting digital magic ✨.
             </p>
           </div>
+          <section className="bg-lime-900 text-lime-200 pt-10 mt-96">
+            <div className="m-10 no-underline">
+              <h1 className="w-full h-full text-3xl my-3 font-sans underline md:decoration-lime-200 underline-offset-8">
+                Work.
+              </h1>
+            </div>
+            <div className="grid grid-cols-3">
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"TESTING"} content="TESTING" />
+            </div>
+          </section>
         </div>
       ) : (
         <div
