@@ -48,13 +48,7 @@ const HomePage = () => {
               </h1>
             </div>
             <div className="grid grid-cols-3">
-              <Card title={"TESTING"} content="TESTING" />
-              <Card title={"TESTING"} content="TESTING" />
-              <Card title={"TESTING"} content="TESTING" />
-              <Card title={"TESTING"} content="TESTING" />
-              <Card title={"TESTING"} content="TESTING" />
-              <Card title={"TESTING"} content="TESTING" />
-              <Card title={"TESTING"} content="TESTING" />
+              <Card title={"BI Tool Integration"} content="TESTING" />
               <Card title={"TESTING"} content="TESTING" />
               <Card title={"TESTING"} content="TESTING" />
             </div>
