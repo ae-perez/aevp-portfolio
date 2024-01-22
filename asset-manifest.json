@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d94fbe08.css",
+    "main.js": "/static/js/main.dd801970.js",
+    "static/js/988.49c5400e.chunk.js": "/static/js/988.49c5400e.chunk.js",
+    "static/media/joshua-aragon-BMnhuwFYr7w-unsplash.jpg": "/static/media/joshua-aragon-BMnhuwFYr7w-unsplash.f100834d78ceeb98820b.jpg",
+    "static/media/rock-paper-scissors.png": "/static/media/rock-paper-scissors.beebf72be45efa8c70f2.png",
+    "static/media/1566525314066.jpeg": "/static/media/1566525314066.9f9fee00d33db2a20eee.jpeg",
+    "static/media/budget.png": "/static/media/budget.1425c7f4eccc04b94b5e.png",
+    "static/media/illustration.png": "/static/media/illustration.d7a9f39e1d480952abfb.png",
+    "static/media/project.png": "/static/media/project.8c513101972d4bcdac52.png",
+    "static/media/animate.png": "/static/media/animate.1fabb73af874a64e0b1b.png",
+    "static/media/analytics.png": "/static/media/analytics.615a49861d78d9d1c61d.png",
+    "index.html": "/index.html",
+    "main.d94fbe08.css.map": "/static/css/main.d94fbe08.css.map",
+    "main.dd801970.js.map": "/static/js/main.dd801970.js.map",
+    "988.49c5400e.chunk.js.map": "/static/js/988.49c5400e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d94fbe08.css",
+    "static/js/main.dd801970.js"
+  ]
+}
