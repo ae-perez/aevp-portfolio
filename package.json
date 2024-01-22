@@ -19,7 +19,7 @@
     "tailwindcss-animated": "^1.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://alejandraperez.ca",
+  "homepage": "https://alejandraperez.ca",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
