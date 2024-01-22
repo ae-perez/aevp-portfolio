@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  plugins: [require("tailwindcss-animated")],
   content: ["./src/**/*.{html,js,css,jsx}"],
   theme: {
     extend: {
@@ -32,6 +33,16 @@ module.exports = {
               "translateY(-80%)" /* Keep the last element visible at 100% */,
           },
         },
+      },
+      colors: {
+        transparent: "transparent",
+        majorelleBlue: { 100: "#A5B4FB", 500: "#5F45F2", 700: "#6248F5" },
+        aquamarine: "#96F1C6",
+        melon: "#FFADAD",
+        peach: "#FFC48C",
+        jasmine: { 500: "#FFE375", 700: "#FFDB5C" },
+        blue: "#9FEDFA",
+        almond: "#F8E2CC", //background
       },
     },
   },

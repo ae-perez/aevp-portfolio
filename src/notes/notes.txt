@@ -18,3 +18,282 @@ https://www.wix.com/website-template/view/html/3141?originUrl=https%3A%2F%2Fwww.
 
 https://www.wix.com/website-template/view/html/2846?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F4&tpClick=view_button&esi=bdae8c56-de96-491b-8542-79987e19d99f
 
+          Hello there! I'm Alejandra, a software full-stack engineer by day and
+          a creative owl by night.
+
+          In the digital realm, I weave code like a wizard, turning complex
+          problems into elegantly simple solutions. My keyboard is my wand, and
+          with each keystroke, I bring functionality and efficiency to life.
+          But wait, there's more to me than just 1s and 0s! When I'm
+          not busy debugging or deploying, you can find me exploring the wild
+          frontiers of creativity. Whether it's creating a new spotify playlist,
+          writing in my journal about my future aspirations, or doodling in my
+          sketchbook, I believe in adding a splash of color to everything I do.
+          
+          My journey through the tech landscape is fueled by endless
+          curiosity and a hearty appetite for learning. From the nitty-gritty of
+          back-end development to the finesse of front-end design, I love all
+          things tech. But it's not just about the code; it's about the stories
+          we can tell and the experiences we can create through technology.
+          
+          So, if you're looking for someone who can code with precision
+          and brainstorm with imagination, you're in the right place. Let's
+          blend logic with creativity and see where this adventure takes us!
+        
+
+
+https://freefrontend.com/css-animated-backgrounds/
+
+
+// home page jan.16 - 5:07 pm
+// src/components/HomePage.jsx
+import Navigation from "./Navigation";
+import Card from "./Card";
+import React, { useState, useEffect } from "react";
+//absolute image import
+import ScheduleUtilizationImage from "../images/project.png";
+import AdvancedAnalyticsImage from "../images/analytics.png";
+import DesignImage from "../images/illustration.png";
+import RockPaperScissorsImage from "../images/rock-paper-scissors.png";
+import D3Image from "../images/graph.png";
+import MarioAnimationImage from "../images/animate.png";
+import BudgetImage from "../images/budget.png";
+
+const HomePage = () => {
+  const [showContent, setShowContent] = useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const cardData = [
+    {
+      title: "Schedule Utilization",
+      img: ScheduleUtilizationImage,
+      summary:
+        "The Schedule Utilization feature was ingeniously crafted for paid analytics users, aimed at enhancing their ability to efficiently monitor and analyze how their employees allocate time during a workday or week. This innovation primarily serves to facilitate more accurate forecasting of future staff availability.\n\n At the core of its functionality, the feature is intuitively integrated into the scheduling page. Users encounter a prominent Utilization button positioned strategically at the top right corner of the calendar. Upon interacting with this button, a modal springs to life, revealing an insightful Looker graph. This graph is not merely a visual treat but a functional marvel, clearly delineating the distribution of an employee's busy and available time slots across the selected time frame, be it a day or a week.\n\n The development journey of this feature was marked by extensive research, delving into the intricacies of integrating Looker API calls within embedded iframes. The team navigated the complexities of ensuring seamless functionality in conjunction with older blade files, all while meticulously addressing any potential formatting issues that might arise in LookML. This rigorous research and careful consideration in development underscore the team's commitment to delivering a feature that is not only technologically sound but also user-centric, significantly simplifying the task of schedule management for analytics users.",
+      date: "May 2023",
+      company: "Coconut Software",
+      team: "Product Manager, UX Designer, Senior Developer, Junior Developer",
+      technologies: "React, PHP, Laravel, JavaScript, LookML, Figma",
+      url: "https://www.coconutsoftware.com/blog/appointment-tracking-software-banks-credit-unions/",
+    },
+    {
+      title: "Advanced Analytics",
+      img: AdvancedAnalyticsImage,
+      summary:
+        "The 'Advanced Analytics' feature, a premium offering from our software suite, is tailored for clients seeking a deeper, more comprehensive understanding of their data. This feature becomes accessible upon subscription, with a dedicated button appearing prominently on the main navigation bar.\n\n Engaging with this button transports users to a specialized page, seamlessly incorporating Google's BI tool within an iframe. This integration forms the core of the Advanced Analytics experience, offering users an array of pre-created dashboards, explores, and looks. These tools are meticulously designed to present a diverse range of statistics in a visually captivating and intuitive format, enabling users to glean valuable insights effortlessly.\n\n One of the standout aspects of this feature is its customization capability. Users are not limited to predefined data visualizations; they have the freedom to craft their own dashboards, explores, and looks. This personalization extends further, allowing users to save their custom creations for easy access from the main Advanced Analytics page. This level of user autonomy and flexibility underscores our commitment to providing a versatile and user-centric analytical tool.\n\n While delivering real-time analytics posed a challenge, our team ingeniously developed an algorithm that ensures data is updated with only a minimal delay, typically just a few minutes. This near real-time capability represents a significant stride in data accuracy and timeliness.\n\n Looking ahead, one of our ambitious goals is to evolve this feature to offer real-time analytics. This enhancement aims to mirror the dynamic nature of each bank's data, providing an even more immediate and accurate reflection of current metrics. The pursuit of this goal highlights our ongoing commitment to innovation and excellence in data analysis, continually seeking to elevate the user experience and provide cutting-edge solutions to our clients.",
+      date: "November 2022",
+      company: "Coconut Software",
+      team: "Product Manager, UX Designer, Senior Developer, Intermediate Developer, Junior Developer",
+      technologies: "React, PHP, Laravel, JavaScript, LookML, Figma",
+      url: "https://www.coconutsoftware.com/blog/appointment-tracking-software-banks-credit-unions/",
+    },
+    {
+      title: "Design System",
+      img: DesignImage,
+      summary:
+        "By integrating an innovative 'Tab' component enriched Coconut Software's design system.It was a strategic enhancement designed to refine navigation efficiency within our core application. This addition was meticulously developed to target specific pages where user experience could be notably improved. The new 'Tab' component not only streamlines the navigation process but also elevates the overall user interface by introducing more intuitive interaction patterns. This enhancement plays a crucial role in simplifying users' access to essential information and functionalities, thereby reducing navigation time and enhancing user satisfaction. The thoughtful design and seamless integration of this component demonstrate our commitment to continually improving our product's usability and aesthetic appeal.",
+      date: "June 2022",
+      company: "Coconut Software",
+      team: "Product Manager, UX Designer, Senior Developer, Junior Developer",
+      technologies: "React, JavaScript, TypeScript, Figma",
+      url: "https://www.coconutsoftware.com/blog/appointment-tracking-software-banks-credit-unions/",
+    },
+    {
+      title: "Rock, Paper Scissors",
+      img: RockPaperScissorsImage,
+      summary:
+        "Developed an engaging and visually captivating Rock Paper Scissors game, designed to provide a delightful and entertaining gameplay experience. This game combines intuitive mechanics with striking aesthetics for hours of enjoyable play.",
+      date: "July 2021",
+      company: "N/A",
+      team: "Independent Contributor",
+      technologies: "HTML, CSS, JavaScript",
+      url: "https://rockpaperscissors-sage.vercel.app/",
+    },
+    {
+      title: "D3 Graph",
+      img: D3Image,
+      summary:
+        "Designed a sophisticated D3 graph using d3.js, offering a dynamic tool for calculating potential earnings and savings from funds, ETFs, and personal savings over several years. This graph provides an intuitive and visually engaging way to project financial growth and investment outcomes.",
+      date: "November 2019",
+      company: "N/A",
+      team: "Independent Contributor",
+      technologies: "HTML, D3.js",
+      url: "https://firstd3graph.vercel.app/",
+    },
+    {
+      title: "Mario Animations",
+      img: MarioAnimationImage,
+      summary:
+        "Crafted a series of CSS animations to bring beloved Mario characters to life, enabling them to dash across your computer screen in a lively display. This creative project encapsulates the essence of these iconic figures, adding a playful and dynamic touch to your digital experience.",
+      date: "September 2019",
+      company: "N/A",
+      team: "Independent Contributor",
+      technologies: "HTML, CSS",
+      url: "https://mariokartpage.perezalejandra.vercel.app/",
+    },
+    {
+      title: "Budget App",
+      img: BudgetImage,
+      summary:
+        "Developed a comprehensive budgeting app designed to help users efficiently manage their finances. This intuitive tool allows for the meticulous tracking of income and expenses, offering a clear and consolidated view of the user's monthly financial status. It simplifies financial planning, ensuring a better understanding and control of one's budget.",
+      date: "August 2019",
+      company: "N/A",
+      team: "Independent Contributor",
+      technologies: "HTML, CSS, JavaScript",
+      url: "https://budgetapp-mdmfwlxnl.now.sh/",
+    },
+  ];
+
+  const handleModalToggle = () => {
+    setIsBlurred(!isBlurred);
+  };
+
+  const handleCardClick = (card) => {
+    setSelectedProject(card);
+  };
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
+    if (!hasVisited) {
+      const timer = setTimeout(() => {
+        setShowContent(true);
+        localStorage.setItem("hasVisited", "true");
+      }, 2000); // 10 seconds for testing
+
+      return () => clearTimeout(timer);
+    } else {
+      setShowContent(true);
+    }
+  }, []);
+
+  return (
+    <div>
+      <Navigation />
+      {showContent ? (
+        <div className={isBlurred ? "content blur-background" : "content"}>
+          <div className="h-screen flex flex-col justify-center items-center">
+            {/* {"text-center mt-56"} */}
+            <h1 className="text-center text-8xl font-extrabold tracking-widest w-full">
+              Hi, I'm Alé.
+            </h1>
+            <div className="text-center font-extrabold text-9xl md:text-8xl [text-wrap:balance] bg-clip-text">
+              A{" "}
+              <span className="text-green inline-flex flex-col h-[calc(theme(fontSize.9xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.8xl)*theme(lineHeight.tight))] overflow-hidden">
+                <ul className="block animate-text-slide text-left leading-tight [&_li]:block">
+                  <li>Full Stack</li>
+                  <li>Front End</li>
+                  <li className="text-center">Back End</li>
+                  <li className="text-center">Software</li>
+                  <li aria-hidden="true">Full Stack</li>
+                </ul>
+              </span>{" "}
+              Developer.
+            </div>
+            <p className="text-3xl my-3 text-brown">
+              I'm passionate about crafting digital magic ✨.
+            </p>
+          </div>
+          <section className="m-20">
+            <div className="mb-32">
+              <h1 class="mb-4	text-center font-extrabold leading-none tracking-tight text-green md:text-5xl lg:text-8xl">
+                Featured Work.
+              </h1>
+              <p class="mb-6 text-center text-lg font-normal text-brown lg:text-2xl sm:px-16 xl:px-48 dark:brown">
+                A curated showcase of my expertise as a developer. It's a
+                glimpse into the breadth of my skills and creativity, offering a
+                preview of the innovative solutions and engaging experiences I
+                am capable of crafting.
+              </p>
+            </div>
+            <div className="grid grid-cols-3 gap-4">
+              {cardData.map((card, index) => {
+                // Determine the column span based on index in a repeating pattern
+                let patternIndex = index % 4;
+                let colSpan =
+                  patternIndex === 0 || patternIndex === 3
+                    ? "col-span-1"
+                    : "col-span-2";
+
+                return (
+                  <div key={index} className={`${colSpan}`}>
+                    <Card
+                      onCardClick={() => handleCardClick(card)}
+                      onModalToggle={handleModalToggle}
+                      card={card}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+          <footer class="bottom-0 left-0 z-20 bg-green-950 w-full p-4 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:border-gray-600">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+              © 2024{" "}
+              <a href="https://flowbite.com/" class="hover:underline">
+                Alejandra™
+              </a>
+              . All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+              <li>
+                <a
+                  href="https://github.com/ae-perez"
+                  class="hover:underline me-4 md:me-6"
+                >
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/alejandraelizabeth/"
+                  class="hover:underline me-4 md:me-6"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="/contact" class="hover:underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      ) : (
+        <div
+          role="status"
+          className="flex flex-row min-h-screen justify-center items-center"
+        >
+          <svg
+            aria-hidden="true"
+            className="w-48 h-48 text-gray-200 animate-spin dark:text-yellow-100 fill-yellow-400"
+            viewBox="0 0 100 101"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="currentColor"
+            />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentFill"
+            />
+          </svg>
+          <span className="sr-only">Loading...</span>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default HomePage;
+
+// --beige: #E6E7D0ff;
+// --snow: #F7EFEEff;
+// --vanilla: #F6EAADff;
+// --jonquil: #FCCF23ff;
+// --moss-green: #98A664ff;
+
+
+

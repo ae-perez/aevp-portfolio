@@ -1,58 +1,25 @@
-const Card = (props) => {
-  const { title, content } = props;
+import React from "react";
+import CardImg from "../images/joshua-aragon-BMnhuwFYr7w-unsplash.jpg";
+import ReadMore from "./ReadMore";
+
+const Card = ({ onModalToggle, onCardClick, card, colorClass }) => {
+  const imageSrc = card.img || CardImg;
+
   return (
-    <div className="bg-lime-900">
-      <div className="bg-white py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-lime-950 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-          <svg
-            viewBox="0 0 1024 1024"
-            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-            aria-hidden="true"
-          >
-            <circle
-              cx={512}
-              cy={512}
-              r={512}
-              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-              fillOpacity="0.7"
-            />
-            <defs>
-              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                <stop stopColor="#879031" />
-                <stop offset={1} stopColor="#acc6a6" />
-              </radialGradient>
-            </defs>
-          </svg>
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              {title}
-              <br />
-              Start using our app today.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              {content}
-              <br />
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-white"
-              >
-                Learn more <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
-            <img
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="App screenshot"
-              width={1824}
-              height={1080}
-            />
-          </div>
+    <div
+      onClick={onCardClick}
+      style={{ boxShadow: "15px 12px #000000" }}
+      className={`mx-auto my-10 max-w-screen-lg rounded-full ${colorClass} flex flex-row items-center`}
+    >
+      <img className="rounded-full" src={imageSrc} alt="" />
+
+      <div className="p-5 flex flex-col justify-center">
+        {/* Added flex-col and justify-center for vertical alignment */}
+        <h5 className="text-majorelleBlue-700 mb-2 text-5xl font-bold tracking-tight">
+          {card.title}
+        </h5>
+        <div className="grid bg-jasmine-700 text-majorelleBlue-500 rounded-full shadow-lg shadow-majorelleBlue-500/50 w-32 h-12 my-4 text-center content-center">
+          <ReadMore onModalToggle={onModalToggle} card={card} />
         </div>
       </div>
     </div>
@@ -60,21 +27,3 @@ const Card = (props) => {
 };
 
 export default Card;
-
-// import React from "react";
-
-// const Card = (props) => {
-//   const { title, content } = props;
-
-//   return (
-//     <div className="card bg-black h-96 rounded-3xl m-10">
-//       {/* <img src={imageUrl} alt={title} className="card-image" /> */}
-//       <div className="card-content">
-//         <h2 className="card-title">{title}</h2>
-//         <p className="card-text">{content}</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Card;
