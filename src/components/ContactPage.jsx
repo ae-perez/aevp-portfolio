@@ -39,17 +39,14 @@ const ContactPage = () => {
         <Navigation />
 
         <div className="my-20 py-8 lg:py-16 px-4 mx-auto h-64 max-w-screen-md">
-          <h1
-            style={{ boxShadow: "4px 4px #000000" }}
-            className="text-center rounded-full bg-aquamarine mb-4 py-2 text-3xl font-extrabold text-majorelleBlue-500 md:text-5xl lg:text-6xl"
-          >
+          <h1 className="text-center rounded-full bg-aquamarine mb-4 py-2 text-3xl font-extrabold text-majorelleBlue-500 md:text-5xl lg:text-6xl">
             Let's build together.
           </h1>
           <p className="mb-8 lg:mb-16 font-light text-center text-majorelleBlue-500 sm:text-xl">
             Whether you're a startup looking to improve user experience or a
-            large coporation looking to redesign its digital assets, I'm some
-            one who can help you achieve your goals. Contact me today to start a
-            conversation.
+            large coporation looking to redesign its digital assets, I'm someone
+            who can help you achieve your goals. Contact me today to start a
+            conversation!
           </p>
           <form className="space-y-8" onSubmit={handleSubmit}>
             <div>

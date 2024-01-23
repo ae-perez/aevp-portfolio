@@ -61,32 +61,20 @@ const AboutPage = () => {
           </div>
           <div className="overflow w-1/2">
             <section className="min-h-screen flex flex-col justify-center items-center w-5/6 p-4">
-              <h1 className="text-majorelleBlue-500 mb-8 text-3xl font-extrabold leading-relaxed md:text-5xl lg:text-6xl">
+              <h1 className="text-majorelleBlue-500 mb-8 text-3xl text-right	font-extrabold leading-relaxed md:text-5xl lg:text-6xl">
                 Hello there! I'm{" "}
-                <span
-                  className="bg-peach rounded-full py-1 px-4 mb-2 inline-flex items-center justify-center"
-                  style={{ boxShadow: "8px 4px #000000" }}
-                >
+                <span className="bg-peach rounded-full py-1 px-4 mb-2 inline-flex items-center justify-center">
                   Alé
                 </span>
                 , a{" "}
-                <span
-                  className="bg-melon rounded-full py-2 px-4 mr-4 mb-2 inline-flex items-center justify-center"
-                  style={{ boxShadow: "8px 4px #000000" }}
-                >
+                <span className="bg-melon rounded-full py-2 px-4 mr-4 mb-2 inline-flex items-center justify-center">
                   full-stack{" "}
                 </span>
-                <span
-                  className="bg-aquamarine rounded-full py-2 px-4 mb-2 inline-flex items-center justify-center"
-                  style={{ boxShadow: "8px 4px #000000" }}
-                >
+                <span className="bg-aquamarine rounded-full py-2 px-4 mb-2 inline-flex items-center justify-center">
                   developer{" "}
                 </span>{" "}
                 by day and a{" "}
-                <span
-                  className="bg-blue rounded-full py-2 px-4 inline-flex items-center justify-center"
-                  style={{ boxShadow: "8px 4px  #000000" }}
-                >
+                <span className="bg-blue rounded-full py-2 px-4 inline-flex items-center justify-center">
                   creative{" "}
                 </span>{" "}
                 owl by night.

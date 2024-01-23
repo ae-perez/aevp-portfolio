@@ -30,7 +30,7 @@ const HomePage = () => {
       company: "Coconut Software",
       team: "Product Manager, UX Designer, Senior Developer, Junior Developer",
       technologies: "React, PHP, Laravel, JavaScript, LookML, Figma",
-      url: "https://www.coconutsoftware.com/blog/appointment-tracking-software-banks-credit-unions/",
+      url: "https://www.coconutsoftware.com/",
     },
     {
       title: "Advanced Analytics",
@@ -41,7 +41,7 @@ const HomePage = () => {
       company: "Coconut Software",
       team: "Product Manager, UX Designer, Senior Developer, Intermediate Developer, Junior Developer",
       technologies: "React, PHP, Laravel, JavaScript, LookML, Figma",
-      url: "https://www.coconutsoftware.com/blog/appointment-tracking-software-banks-credit-unions/",
+      url: "https://www.coconutsoftware.com/",
     },
     {
       title: "Design System",
@@ -52,7 +52,7 @@ const HomePage = () => {
       company: "Coconut Software",
       team: "Product Manager, UX Designer, Senior Developer, Junior Developer",
       technologies: "React, JavaScript, TypeScript, Figma",
-      url: "https://www.coconutsoftware.com/blog/appointment-tracking-software-banks-credit-unions/",
+      url: "https://www.coconutsoftware.com/",
     },
     {
       title: "Rock, Paper Scissors",
@@ -188,7 +188,7 @@ const HomePage = () => {
                 <span className=" text-majorelleBlue-500">Developer.</span>
               </div>
               <p className="text-majorelleBlue-500 text-3xl my-3 text-brown">
-                I'm passionate about crafting digital magic ✨.
+                I'm passionate about crafting digital magic ⭐
               </p>
             </div>
             {!hasScrolled && (
