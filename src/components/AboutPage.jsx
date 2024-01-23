@@ -28,7 +28,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen cursor-grab">
+    <div className="flex flex-col h-screen">
       <div className="flex-grow mb-10">
         <Navigation />
 
@@ -109,8 +109,8 @@ const AboutPage = () => {
               </p>
             </section>
 
-            <section className="min-h-screen w-5/6">
-              <h1 className="text-majorelleBlue-500 text-right mb-4 text-3xl font-extrabold md:text-5xl lg:text-6xl">
+            <section className="min-h-screen w-5/6 p-4">
+              <h1 className="text-majorelleBlue-500 text-right mb-8 text-3xl font-extrabold md:text-5xl lg:text-6xl">
                 Work Experience.
               </h1>
               <p className="text-justify text-lg font-normal text-majorelleBlue-500 lg:text-xl">

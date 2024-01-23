@@ -137,7 +137,7 @@ const ReadMore = ({ onModalToggle, card }) => {
         onClick={toggleModal}
         data-modal-target="default-modal"
         data-modal-toggle="default-modal"
-        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg shadow-majorelleBlue-500/50"
+        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-full shadow-majorelleBlue-500/50 hover:rounded-full hover:bg-majorelleBlue-500 hover:text-jasmine-700"
         type="button"
       >
         Read more

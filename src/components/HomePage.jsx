@@ -154,7 +154,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="bg-almond cursor-grab">
+    <div className="bg-almond">
       <Navigation />
       {isBlurred && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-30"></div>

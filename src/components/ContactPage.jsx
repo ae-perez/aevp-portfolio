@@ -34,7 +34,7 @@ const ContactPage = () => {
 
   return (
     // h-screen flex flex-col md:flex-row justify-center items-start
-    <div className="flex flex-col min-h-screen cursor-grab">
+    <div className="flex flex-col min-h-screen">
       <div className="flex-grow">
         <Navigation />
 
@@ -45,8 +45,7 @@ const ContactPage = () => {
           <p className="mb-8 lg:mb-16 font-light text-center text-majorelleBlue-500 sm:text-xl">
             Whether you're a startup looking to improve user experience or a
             large coporation looking to redesign its digital assets, I'm someone
-            who can help you achieve your goals. Contact me today to start a
-            conversation!
+            who can help you achieve your goals!
           </p>
           <form className="space-y-8" onSubmit={handleSubmit}>
             <div>
@@ -79,13 +78,13 @@ const ContactPage = () => {
                 onChange={handleChange}
                 value={formData.message}
                 xs
-                className="block p-3 w-full text-sm rounded-lg border border-2 border-majorelleBlue-500 focus:ring-majorelleBlue-500"
+                className="block p-3 w-full text-sm rounded-lg border border-2 border-majorelleBlue-500 focus:ring-majorelleBlue-500 hover:cursor-text"
                 placeholder="Leave your thoughts here..."
               ></textarea>
             </div>
             <button
               type="submit"
-              className="py-3 px-5 text-sm font-semibold text-center text-majorelleBlue-500 shadow-lg shadow-majorelleBlue-500/50 rounded-full bg-jasmine-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-majorelleBlue-500"
+              className="py-3 px-5 text-sm font-semibold text-center text-majorelleBlue-500 shadow-lg shadow-majorelleBlue-500/50 rounded-full bg-jasmine-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-majorelleBlue-500 hover:bg-majorelleBlue-500 hover:text-jasmine-700"
             >
               Send message
             </button>

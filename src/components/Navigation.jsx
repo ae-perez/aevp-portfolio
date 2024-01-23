@@ -30,15 +30,22 @@ function Navigation() {
           isScrolled ? "bg-jasmine-700" : "bg-transparent"
         } hover:bg-jasmine-700 fixed top-0 left-1/2 transform -translate-x-1/2 z-50`}
       >
-        <ul className="flex flex-row gap-x-8 text-majorelleBlue-500 justify-center items-center h-full">
-          <li className="rounded-full w-auto text-center text-2xl h-9 hover:bg-majorelleBlue-500 hover:text-jasmine-700">
-            <Link to="/">Home</Link>
+        <ul className="flex flex-row gap-x-12 text-majorelleBlue-500 justify-center items-center">
+          {/* <li className="rounded-full w-auto text-center text-2xl hover:px-4 hover:bg-majorelleBlue-500 hover:text-jasmine-700"> */}
+          <li className="rounded-full w-auto text-center text-2xl px-4 transition duration-300 ease-in-out hover:bg-majorelleBlue-500 hover:text-jasmine-700">
+            <Link to="/" className="inline-block py-2 px-2">
+              Home
+            </Link>
           </li>
-          <li className="rounded-full w-auto text-center text-2xl h-9 hover:bg-majorelleBlue-500 hover:text-jasmine-700">
-            <Link to="/about">About</Link>
+          <li className="rounded-full w-auto text-center text-2xl px-4 transition duration-300 ease-in-out hover:bg-majorelleBlue-500 hover:text-jasmine-700">
+            <Link to="/about" className="inline-block py-2 px-2">
+              About
+            </Link>
           </li>
-          <li className="rounded-full w-auto text-center text-2xl h-9 hover:bg-majorelleBlue-500 hover:text-jasmine-700">
-            <Link to="/contact">Contact</Link>
+          <li className="rounded-full w-auto text-center text-2xl px-4 transition duration-300 ease-in-out hover:bg-majorelleBlue-500 hover:text-jasmine-700">
+            <Link to="/contact" className="inline-block py-2 px-2">
+              Contact
+            </Link>
           </li>
           {/* Add more links for other pages */}
         </ul>

@@ -20,7 +20,7 @@ const Experience = () => {
             </svg>
           </span>
           <h3 className="font-medium leading-tight">Coconut Software</h3>
-          <p className="text-sm">Junior Developer</p>
+          <p className="text-sm">Software Developer</p>
           <p className="text-sm">January 2022 - October 2023</p>
           <br />
           <p className="text-sm text-justify">
@@ -102,7 +102,7 @@ const Experience = () => {
           <h3 className="font-medium leading-tight">
             Ontario Ministry of Children, Community and Social Services
           </h3>
-          <p className="text-sm">Software Testing Developer</p>
+          <p className="text-sm">Junior Software Developer</p>
           <p className="text-sm">May 2018 - April 2019</p>
           <br />
           <p className="text-sm text-justify">
